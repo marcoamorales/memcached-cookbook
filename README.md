@@ -10,9 +10,7 @@ This cookbook has no requirements.
 
 Attributes
 ----------
-TODO: List your cookbook attributes here.
 
-e.g.
 #### memcached::default
 <table>
   <tr>
