@@ -22,19 +22,27 @@ e.g.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['memcached']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
+    <td><tt>['port']</tt></td>
+    <td>Decimal</td>
+    <td>Port on which memcached will be listening</td>
+    <td><tt>11211</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['memory_decimal_percentage']</tt></td>
+    <td>Decimal</td>
+    <td>Decimal percentage of the maximum amount of memory that memcache can use on the server</td>
+    <td><tt>0.75</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['max_connections']</tt></td>
+    <td>Decimal</td>
+    <td>The maximum amounts of connections memcache can support</td>
+    <td><tt>1024</tt></td>
   </tr>
 </table>
 
 Usage
 -----
-#### memcached::default
-TODO: Write usage instructions for each cookbook.
-
-e.g.
 Just include `memcached` in your node's `run_list`:
 
 ```json
@@ -48,9 +56,6 @@ Just include `memcached` in your node's `run_list`:
 
 Contributing
 ------------
-TODO: (optional) If this is a public cookbook, detail the process for contributing. If this is a private cookbook, remove this section.
-
-e.g.
 1. Fork the repository on Github
 2. Create a named feature branch (like `add_component_x`)
 3. Write your change
@@ -60,4 +65,4 @@ e.g.
 
 License and Authors
 -------------------
-Authors: TODO: List authors
+Authors: Marco A Morales
