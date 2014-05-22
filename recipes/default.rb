@@ -21,17 +21,17 @@
 package "memcached"
 
 template "/etc/memcached.conf" do
-    source "memcached.conf.erb"
-    mode 0644
-    owner "root"
-    group "root"
-    variables({
-        :port => node['port'],
-        :memory_decimal => node['memory_decimal'],
-        :max_connections => node['max_connections']
-    })
+  source "memcached.conf.erb"
+  mode 0644
+  owner "root"
+  group "root"
+  variables({
+    :port => node['port'],
+    :memory_decimal => node['memory_decimal'],
+    :max_connections => node['max_connections']
+  })
 end
 
 service "memcached" do
-    action [ :enable, :start ]
+  action [ :enable, :start ]
 end
