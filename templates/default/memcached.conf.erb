@@ -21,7 +21,7 @@ logfile /var/log/memcached.log
 # Note that the daemon will grow to this size, but does not start out holding this much
 # memory
 -m <%= (node['memory']['total'].to_i / 1024) *
-        @memory_decimal %>
+        @memory_decimal_percentage %>
 
 # Default connection port is 11211
 -p <%= @port %>

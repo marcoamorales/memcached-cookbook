@@ -27,8 +27,9 @@ template "/etc/memcached.conf" do
   group "root"
   variables({
     :port => node['port'],
-    :memory_decimal => node['memory_decimal'],
-    :max_connections => node['max_connections']
+    :memory_decimal_percentage => node['memory_decimal_percentage'],
+    :max_connections => node['max_connections'],
+    :cookbook_name => cookbook_name
   })
 end
 
