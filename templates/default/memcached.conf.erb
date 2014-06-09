@@ -51,3 +51,7 @@ logfile /var/log/memcached.log
 
 # Maximize core file limit
 # -r
+
+<% @memcached_conf.each_pair do |directive, config| %>
+    <%= "#{directive} #{config}" %>
+<% end %>

@@ -29,7 +29,8 @@ template "/etc/memcached.conf" do
     :port => node['port'],
     :memory_decimal_percentage => node['memory_decimal_percentage'],
     :max_connections => node['max_connections'],
-    :cookbook_name => cookbook_name
+    :cookbook_name => cookbook_name,
+    :memcached_conf => node['memcache']['config']['memcached.conf'],
   })
 end
 
